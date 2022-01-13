@@ -1,0 +1,170 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-fluid m-2">
+    <div class="row">
+
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ipsam? Repellat praesentium eligendi, harum delectus ducimus rerum! Culpa magni tenetur consequatur numquam earum quam, voluptatum necessitatibus, quas eveniet odio esse?.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora blanditiis temporibus recusandae quam accusamus tenetur cum magni optio repellat sint, porro eligendi asperiores possimus nostrum quae iste velit reprehenderit molestiae.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row m-4">
+        <h2 class="text-center m-4">HOW IT WORKS </h2>
+        <div class="col-md-4 ">
+
+            <div class="card">
+                <img src="https://www.pngkit.com/png/detail/131-1314076_png-file-free-transparent-food-icon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Choose Your Favorite</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+
+            <div class="card">
+                <img src="https://www.kindpng.com/picc/m/587-5871102_food-delivery-icon-hd-png-download.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">We Deliver Your Meals</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 ">
+
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/eat-eating-restaurant-caf%C3%A9-person-outline-icon-logo-vector-illustration-206471859.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Eat and Enjoy</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid m-4">
+    <div class="row m-4">
+        <h2 class="text-center">OUR FEATURED MENU</h2>
+
+        <div class="col-md-3">
+
+            <div class="card">
+                <img src="https://images-gmi-pmc.edge-generalmills.com/4d928cc0-d117-464d-b926-68972cce695c.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card">
+                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/2/19/1/FN_Air-Fryer-Chicken-Wings-H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1550611553388.jpeg" class="card-img-top" alt="...">
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card">
+                <img src="https://www.delonghi.com/Global/recipes/multifry/97.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card">
+                <img src="https://www.preciouscore.com/wp-content/uploads/2018/08/Nigerian-Jollof-Rice-500x375.jpg" class="card-img-top" alt="...">
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="container ">
+    <div class="row m-4  align-items-center justify-content-center ">
+        <h3 class="text-center m-4 g-2">Prices and Packages</h3>
+        <div class="col-md-4 ">
+
+
+            <div class="card shadow  mb-4">
+                <div class="card-body text-center p-4">
+                    <h3 class="m-4">Breakfast</h3>
+                    <h4 class="text-warning"> GH₵80</h4>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <a href="{% url 'customer:order' %}" class="btn btn-warning text-white" type="button">ORDER NOW</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4  mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center p-4 ">
+                    <h3 class="m-4">Lunch</h3>
+                    <h4 class="text-info"> GH₵110 </h4>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="{% url 'customer:order' %}" class="btn btn-info text-white" type=" button ">ORDER NOW</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4 ">
+            <div class="card shadow ">
+                <div class="card-body text-center p-4 ">
+                    <h3 class="m-4">Birth Day</h3>
+                    <h3 class="text-primary ">GH₵160 </h3>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                    <p>dummy text dummy text</p>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <a href="{% url 'customer:order' %}" class="btn btn-primary " type="button ">ORDER NOW</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

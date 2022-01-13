@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6-mt-3">
+            <h1>Order ID: {{ order.pk }}</h1>
+        </div>
+    </div>
+    <div class="row-justify-content-center">
+
+        <div class="col-md-12-sm-12">
+            <h3>Customer Information </h3>
+        </div>
+
+        <div class="md-6-mt-5">
+            <p> <span style="font-weight: 400;">Name:</span> {{ order.name}}</p>
+            <p> <span style="font-weight: 400;">Email:</span> {{order.email}} </p>
+            <h5 class="pt-3"> Address Information </h5>
+            <p> <span style="font: 400;"></span> {{order.location}} </p>
+            <p> <span style="font: 400;"></span> </p>
+            <p> <span style="font: 400;"></span> </p>
+            <p> <span style="font: 400;"></span> </p>
+
+        </div>
+
+        <div class="col-md-6">
+            {% if order.order_completed %}
+
+            <p>order completed</p>
+
+            {% else %}
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                <input value="Confirm order completed" type="submit" class="btn btn-outline-success">
+            </form>
+
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

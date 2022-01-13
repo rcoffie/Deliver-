@@ -1,0 +1,62 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+    <div class="row ">
+        <h1>Dashboard </h1>
+
+        <div class="col-md-6  p-4">
+
+            <div class="card border-3 rounded">
+                <div class="card-body">
+                    <div class="h1 text-center text-danger ">GH₵ {{total_revenue}} </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6  p-4">
+
+            <div class="card border-3 rounded">
+                <div class="card-body">
+                    <div class="h1 text-center text-danger ">Total Orders {{total_orders}} </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 m-auto">
+
+            <table class="table table-bordered border-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> Price </th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Customer Email</th>
+                        <th scope="col">Customer Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in orders %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }} </th>
+                        <td>{{ order.price}}</td>
+                        <td>
+                            <a href="{% url 'restaurant:order-details' order.pk %}"> {{ order.name}} </a> </td>
+                        <td>{{ order.email}}</td>
+                        <td>{{ order.location}}</td>
+
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
